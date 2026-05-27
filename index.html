@@ -415,27 +415,28 @@ function renderProxFin(d){
 function renderPagamentos(d){
   // Em atraso
   document.getElementById('atraso-section').innerHTML = d.atraso.length
-    ? `<div class="alert-box alert-red">⚠️ <strong>${d.atraso.length} pagamento(s) em atraso</strong> — ${brl(d.total_atraso)}</div>
-       <div class="section"><div class="section-title"><span>🔴</span> Em Atraso</div>${mkTabela(d.atraso,'')}</div>`
+    ? '<div class="alert-box alert-red">⚠️ <strong>'+d.atraso.length+' pagamento(s) em atraso</strong> — '+brl(d.total_atraso)+'</div>'
+      +'<div class="section"><div class="section-title"><span>🔴</span> Em Atraso</div>'+mkTabela(d.atraso,'')+'</div>'
     : '';
-  // Próxima semana
+  // Próximos vencimentos
   const CORES2=['#3b82f6','#22c55e','#a855f7'];
-  const socBadgesPag=d.prox_socios.map((s,i)=>{
-    const [nome,pct,share,pend]=s;
-    const b=pend>0?`<span style="color:#f59e0b;font-size:10px">● CC Pend. ${brl(pend)}</span>`:`<span style="color:#22c55e;font-size:10px">● Em dia</span>`;
-    return`<div style="display:inline-flex;flex-direction:column;align-items:center;background:rgba(255,255,255,0.04);border-radius:8px;padding:5px 12px;border:1px solid rgba(255,255,255,0.08)">
-      <span style="color:${CORES2[i]};font-weight:700;font-size:11px">${nome} (${pct}%)</span>
-      <span style="font-weight:700;font-size:13px;margin:2px 0">${brl(share)}</span>
-      ${b}</div>`;
+  const socBadgesPag=d.prox_socios.map(function(s,i){
+    const nome=s[0],pct=s[1],total_pend=s[2];
+    const label=total_pend>0?'● a transferir':'● Em dia ✅';
+    const cor=total_pend>0?CORES2[i]:'#22c55e';
+    return '<div style="display:inline-flex;flex-direction:column;align-items:center;background:rgba(255,255,255,0.04);border-radius:8px;padding:5px 12px;border:1px solid rgba(255,255,255,0.08)">'
+      +'<span style="color:'+CORES2[i]+';font-weight:700;font-size:11px">'+nome+' ('+pct+'%)</span>'
+      +'<span style="font-weight:700;font-size:13px;margin:2px 0;color:'+cor+'">'+brl(total_pend)+'</span>'
+      +'<span style="font-size:10px;color:var(--muted)">'+label+'</span></div>';
   }).join('');
   document.getElementById('prox-section').innerHTML =
     d.prox.length
-      ? `<div class="section">
-          <div class="section-title"><span>📅</span> Próximos 10 Dias — ${brl(d.total_prox)}</div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">${socBadgesPag}</div>
-          ${mkTabela(d.prox,'')}
-        </div>`
-      : `<div style="color:var(--green);font-size:12px;padding:8px 0">✅ Nenhum vencimento nos próximos 10 dias.</div>`;
+      ? '<div class="section">'
+        +'<div class="section-title"><span>📅</span> Próximos Vencimentos — '+brl(d.total_prox)+'</div>'
+        +'<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">'+socBadgesPag+'</div>'
+        +mkTabela(d.prox,'')
+        +'</div>'
+      : '<div style="color:var(--green);font-size:12px;padding:8px 0">✅ Nenhum vencimento próximo.</div>';
 
   document.getElementById('pend-title').textContent = filtroAtual==='todos' ? 'Todos os Pendentes' : 'Pendentes — '+filtroAtual;
   document.getElementById('todos-pendentes').innerHTML = mkTabela(d.todos_pend, 'Nenhum pagamento pendente. 🎉');
@@ -444,22 +445,25 @@ function renderPagamentos(d){
 function renderSocios(d){
   const CORES_S=['#3b82f6','#22c55e','#a855f7'];
   let h='';
-  d.socios.forEach(([nome,pct,comp,transf],i)=>{
-    const diff=comp-transf;
-    const pctT=comp>0?Math.min(100,Math.round(transf/comp*1000)/10):0;
+  d.socios.forEach(function(s,i){
+    const nome=s[0],pct=s[1],comp=s[2],cc_pend=s[3];
+    // comp = total comprometido; cc_pend = valor pendente em CC
+    // já transferido = comp - cc_pend
+    const transferido=comp-cc_pend;
+    const pctT=comp>0?Math.min(100,Math.round(transferido/comp*1000)/10):0;
     const cor=CORES_S[i];
-    h+=`<div class="socio-card">
-      <div class="socio-name" style="color:${cor}">${nome}</div>
-      <div class="socio-pct">${pct}% do empreendimento</div>
-      <div class="sl">Comprometido pelos Sócios</div><div class="sv">${brl(comp)}</div>
-      <div class="sl">Já Transferido</div>
-      <div class="sv" style="color:${cor}">${brl(transf)}</div>
-      <div class="progress"><div class="progress-fill" style="width:${pctT}%;background:${cor}"></div></div>
-      <div style="font-size:10px;color:var(--muted);margin-top:3px">${pctT}% transferido</div>
-      ${diff>0
-        ? `<div class="sl" style="margin-top:10px">Pendente (CC)</div><div class="sv" style="color:var(--yellow)">${brl(diff)}</div>`
-        : `<div style="color:var(--green);font-size:11px;margin-top:10px">✅ Em dia</div>`}
-    </div>`;
+    h+='<div class="socio-card">'
+      +'<div class="socio-name" style="color:'+cor+'">'+nome+'</div>'
+      +'<div class="socio-pct">'+pct+'% do empreendimento</div>'
+      +'<div class="sl">Comprometido</div><div class="sv">'+brl(comp)+'</div>'
+      +'<div class="sl">Já Transferido</div>'
+      +'<div class="sv" style="color:'+cor+'">'+brl(transferido)+'</div>'
+      +'<div class="progress"><div class="progress-fill" style="width:'+pctT+'%;background:'+cor+'"></div></div>'
+      +'<div style="font-size:10px;color:var(--muted);margin-top:3px">'+pctT+'% transferido</div>'
+      +(cc_pend>0
+        ? '<div class="sl" style="margin-top:10px">CC Pendente</div><div class="sv" style="color:var(--yellow)">'+brl(cc_pend)+'</div>'
+        : '<div style="color:var(--green);font-size:11px;margin-top:10px">✅ Em dia</div>')
+      +'</div>';
   });
   document.getElementById('socios-grid').innerHTML=h;
 
