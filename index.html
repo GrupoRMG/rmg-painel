@@ -90,7 +90,10 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:12px 32
     </svg>
     <h1>Grupo RMG · Painel de Gestão</h1>
   </div>
-  <div class="update-badge">⏱ Atualizado 28/05/2026 13:16"filter-bar">
+  <div class="update-badge">⏱ Atualizado 28/05/2026 17:30</div>
+</div>
+
+<div class="filter-bar">
   <span class="filter-label">🏠 Imóvel:</span>
   <button class="filter-btn active" onclick="setFiltro('todos',this)">Todos</button>
   <button class="filter-btn" onclick="setFiltro('Casa 01',this)">Casa 01</button>
@@ -155,7 +158,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:12px 32
   </div>
 </div>
 
-<!-- TAB IMOBILIÁRIAS (lido da planilha) -->
+<!-- TAB IMOBILIÁRIAS -->
 <div class="tab-pane" id="tab-imobiliarias">
   <div class="grid3">
     <div class="imob-card">
@@ -165,7 +168,6 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:12px 32
       <div class="imob-row"><span class="imob-row-label">Tel. Imobiliária</span><span>(19) 97404-2258</span></div>
       <div class="imob-row"><span class="imob-row-label">Corretor(a)</span><span style="font-weight:700">STEPHANIE</span></div>
       <div class="imob-row"><span class="imob-row-label">Tel. Corretor</span><span>11-91608-8848</span></div>
-      <div class="imob-row"><span class="imob-row-label">E-mail</span><span style="font-size:11px">—</span></div>
       <div class="imob-row"><span class="imob-row-label">Produto</span><span>CASA 01</span></div>
       <div class="imob-row"><span class="imob-row-label">Comissão</span><span style="color:var(--yellow);font-weight:700">6%</span></div>
     </div>
@@ -176,7 +178,6 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:12px 32
       <div class="imob-row"><span class="imob-row-label">Tel. Imobiliária</span><span>(11) 99441-9883</span></div>
       <div class="imob-row"><span class="imob-row-label">Corretor(a)</span><span style="font-weight:700">JOÃO EVANDRO</span></div>
       <div class="imob-row"><span class="imob-row-label">Tel. Corretor</span><span>(11) 99441-9883</span></div>
-      <div class="imob-row"><span class="imob-row-label">E-mail</span><span style="font-size:11px">—</span></div>
       <div class="imob-row"><span class="imob-row-label">Produto</span><span>CASA 01</span></div>
       <div class="imob-row"><span class="imob-row-label">Comissão</span><span style="color:var(--yellow);font-weight:700">6%</span></div>
     </div>
@@ -187,7 +188,6 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:12px 32
       <div class="imob-row"><span class="imob-row-label">Tel. Imobiliária</span><span>(11) 4028-1983</span></div>
       <div class="imob-row"><span class="imob-row-label">Corretor(a)</span><span style="font-weight:700">SOLANGE</span></div>
       <div class="imob-row"><span class="imob-row-label">Tel. Corretor</span><span>(11) 97151-7392</span></div>
-      <div class="imob-row"><span class="imob-row-label">E-mail</span><span style="font-size:11px">—</span></div>
       <div class="imob-row"><span class="imob-row-label">Produto</span><span>CASA 01</span></div>
       <div class="imob-row"><span class="imob-row-label">Comissão</span><span style="color:var(--yellow);font-weight:700">6%</span></div>
     </div>
@@ -195,54 +195,44 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:12px 32
       <div class="imob-name">JENNIFFER SOUZA CASTRO</div>
       <span class="badge badge-green" style="margin-bottom:12px;display:inline-block">ATIVO</span>
       <div class="imob-row"><span class="imob-row-label">Tipo</span><span style="font-size:11px">Corretora Autônoma</span></div>
-      <div class="imob-row"><span class="imob-row-label">Tel. Imobiliária</span><span>11-94322-1395</span></div>
-      <div class="imob-row"><span class="imob-row-label">Corretor(a)</span><span style="font-weight:700">JENNIFFER SOUZA CASTRO</span></div>
-      <div class="imob-row"><span class="imob-row-label">Tel. Corretor</span><span>11-94322-1395</span></div>
+      <div class="imob-row"><span class="imob-row-label">Tel.</span><span>11-94322-1395</span></div>
       <div class="imob-row"><span class="imob-row-label">E-mail</span><span style="font-size:11px">jennifferscastro@gmail.com</span></div>
       <div class="imob-row"><span class="imob-row-label">CRECI</span><span>266385</span></div>
-      <div class="imob-row"><span class="imob-row-label">Produto</span><span>—</span></div>
-      <div class="imob-row"><span class="imob-row-label">Comissão</span><span style="color:var(--muted);font-weight:700">—</span></div>
     </div>
     <div class="imob-card">
       <div class="imob-name">KAROL ALBERTI</div>
       <span class="badge badge-green" style="margin-bottom:12px;display:inline-block">ATIVO</span>
       <div class="imob-row"><span class="imob-row-label">Tipo</span><span style="font-size:11px">Corretora Autônoma</span></div>
-      <div class="imob-row"><span class="imob-row-label">Tel. Imobiliária</span><span>11-94823-7032</span></div>
-      <div class="imob-row"><span class="imob-row-label">Corretor(a)</span><span style="font-weight:700">KAROL ALBERTI</span></div>
-      <div class="imob-row"><span class="imob-row-label">Tel. Corretor</span><span>11-94823-7032</span></div>
+      <div class="imob-row"><span class="imob-row-label">Tel.</span><span>11-94823-7032</span></div>
       <div class="imob-row"><span class="imob-row-label">E-mail</span><span style="font-size:11px">karolalberti@gmail.com</span></div>
-      <div class="imob-row"><span class="imob-row-label">Produto</span><span>—</span></div>
-      <div class="imob-row"><span class="imob-row-label">Comissão</span><span style="color:var(--muted);font-weight:700">—</span></div>
     </div>
   </div>
 </div>
 
-<!-- TAB FORNECEDORES (lido da planilha) -->
+<!-- TAB FORNECEDORES -->
 <div class="tab-pane" id="tab-fornecedores">
   <div class="section">
     <div class="section-title"><span>🔧</span> Fornecedores Cadastrados</div>
-    <table><thead><tr><th>Empresa</th><th>Endereço</th><th>Vendedor</th><th>Tel. Vendedor</th><th>E-mail</th><th>Formas de Pgto</th><th>NF</th></tr></thead><tbody><tr>
-      <td style="font-weight:700">SOBASE</td>
-      <td style="font-size:11px;color:var(--muted)">R. Barão do Rio Branco, 484</td>
-      <td>IRWING THIAGO</td><td>11-99894-7966</td>
-      <td style="font-size:11px">—</td>
-      <td style="font-size:11px">PIX - CARTÃO DE CRÉDITO</td>
-      <td><span class="badge badge-green">Sim</span></td></tr>
-    </tbody></table></div>
-</div>
+    <table><thead><tr><th>Empresa</th><th>Especialidade</th><th>Vendedor</th><th>Telefone</th><th>NF</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:700">SOBASE</td><td style="color:var(--muted)">Materiais de construção</td><td>IRWING THIAGO</td><td>11-99894-7966</td><td><span class="badge badge-green">Sim</span></td></tr>
+    </tbody></table>
+  </div>
 </div>
 
-<footer>Para atualizar: diga <strong>"atualiza o painel HTML"</strong> no Claude Cowork</footer>
+</div>
+
+<footer>Para atualizar: execute <strong>python3 gerar_painel.py</strong> na pasta do projeto — ou aguarde a atualização automática diária</footer>
 
 <script>
 Chart.defaults.color='#94a3b8';
 Chart.defaults.borderColor='rgba(51,65,85,0.6)';
-const DATA = {"todos":{"kpi":{"comp":228735.51,"transf":194312.37,"ap_pend":34423.14,"gasto":211655.02,"pago":211655.02,"pendente":92979.34},"meses":["Jan/26","Feb/26","Mar/26","Apr/26","May/26","Jun/26","Jul/26","Aug/26","Sep/26","Oct/26"],"pago":[3070.11,139511.55,13037.82,10411.52,31615.76,13768.26,0.0,0.0,0.0,0.0],"pend":[0.0,550.0,773.46,79670.63,11298.7,137.31,137.31,137.31,137.31,137.31],"ap":[3070.11,141185.31,7131.76,9959.63,23267.56,9697.99,0.0,0.0,0.0,0.0],"orc":[["Aquisição",135000.0,148998.39],["Pré Obra",50000.0,9371.62],["Durante Obra",180000.0,53285.01],["Pós Obra",20000.0,0.0]],"ult":[["18/05/26","10/06/26","SOBASE COMERCIO DE MATERIAIS - Treliça TB 8L, Chapa Madeira Plastif.11mm, Barra Ferro CA-50 3/8, Prego 17x21, Arame Recozido 12","Durante Obra",1234.8,"Pedido 407259 - Cielo","Sobase"],["21/05/26","10/06/26","Areia grossa usinada","Durante Obra",779.9,"","Sandmix"],["21/05/26","10/06/26","Ferro diversas bitolas","Durante Obra",7107.56,"","Ynova"],["25/05/26","10/06/26","Laje","Durante Obra",4646.0,"⚠️ REVISAR: Comprovante mostra cartão Caixa *** 4060 Visa Crédito — verificar se é Cartão Caixa (banco, sem aportes) ou cartão pessoal de sócio. Se for Caixa banco, remover aportes 245/246/251.","Itulaje"],["26/05/26","26/05/26","Conta de luz","Durante Obra",141.25,"Comprovante: 2026-05-26_PGTO_Cpfl Piratininga_Conta de luz.pdf","Cpfl Piratininga"],["22/05/26","22/05/26","Mão de obra","Durante Obra",8748.0,"","Felipe"],["20/05/26","20/05/26","Escoras","Durante Obra",1125.0,"","Madepar centro"],["20/05/26","20/05/26","Andaime 1 mês","Durante Obra",296.0,"","Nc aluguel de maquinas"],["18/05/26","","Vigas","Durante Obra",240.0,"","Madepar centro"],["16/05/26","16/05/26","Betoneira - 1 mês","Durante Obra",342.0,"","Nc aluguel de máquinas"]],"prox":[["29/05/26","Pagamento IPTU ref a 05/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/06/26","Pagamento IPTU ref a 06/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/07/26","Pagamento IPTU ref a 07/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/08/26","Pagamento IPTU ref a 08/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/09/26","Pagamento IPTU ref a 09/2026","Pós Obra",137.31,"","Prefeitura de salto"],["30/10/26","Pagamento IPTU ref a 10/2026","Pós Obra",137.31,"","Prefeitura de salto"]],"atraso":[["06/02/26","Paginação","Pré Obra",550.0,"","Amanda lima - arquitetura"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["17/04/26","Aluguel do container - ref mês 3","Pré Obra",290.0,"","Container"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["29/04/26","Materiais","Durante Obra",5249.83,"","Sobase"],["29/04/26","Materiais","Durante Obra",846.9,"","Sobase"],["29/04/26","Materiais","Durante Obra",779.9,"","Sobase"],["05/05/26","Concreto","Durante Obra",7565.01,"","Big itu"],["07/05/26","Bomba para concretagem","Durante Obra",900.0,"","Silva & lima"],["07/05/26","Materiais","Durante Obra",606.69,"","Sobase"],["07/05/26","Materiais","Durante Obra",2089.69,"","Sobase"]],"todos_pend":[["06/02/26","Paginação","Pré Obra",550.0,"","Amanda lima - arquitetura"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["17/04/26","Aluguel do container - ref mês 3","Pré Obra",290.0,"","Container"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["29/04/26","Materiais","Durante Obra",5249.83,"","Sobase"],["29/04/26","Materiais","Durante Obra",846.9,"","Sobase"],["29/04/26","Materiais","Durante Obra",779.9,"","Sobase"],["05/05/26","Concreto","Durante Obra",7565.01,"","Big itu"],["07/05/26","Bomba para concretagem","Durante Obra",900.0,"","Silva & lima"],["07/05/26","Materiais","Durante Obra",606.69,"","Sobase"],["07/05/26","Materiais","Durante Obra",2089.69,"","Sobase"],["29/05/26","Pagamento IPTU ref a 05/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/06/26","Pagamento IPTU ref a 06/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/07/26","Pagamento IPTU ref a 07/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/08/26","Pagamento IPTU ref a 08/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/09/26","Pagamento IPTU ref a 09/2026","Pós Obra",137.31,"","Prefeitura de salto"],["30/10/26","Pagamento IPTU ref a 10/2026","Pós Obra",137.31,"","Prefeitura de salto"]],"total_prox":823.86,"total_atraso":92155.48,"total_todos_pend":92979.34,"socios":[["Ricardo",33.33,76222.95,10302.13],["Márcio",33.33,76256.06,13265.21],["Gabriel",33.33,76256.49,10855.8]],"total_comp_socios":228735.5,"total_gasto_socios":211655.02,"ap_meses":["Jan/26","Feb/26","Mar/26","Apr/26","May/26","Jun/26","Jul/26","Aug/26","Sep/26","Oct/26"],"ap_vals":[3070.11,141185.31,7131.76,9959.63,23267.56,9697.99,0.0,0.0,0.0,0.0],"prox_socios":[["Ricardo",33.33,10302.13,10302.13],["Márcio",33.33,13265.21,13265.21],["Gabriel",33.33,10855.8,10855.8]],"transferencias":[]},"Casa 01":{"kpi":{"comp":228735.51,"transf":194312.37,"ap_pend":34423.14,"gasto":211655.02,"pago":211655.02,"pendente":92979.34},"meses":["Jan/26","Feb/26","Mar/26","Apr/26","May/26","Jun/26","Jul/26","Aug/26","Sep/26","Oct/26"],"pago":[3070.11,139511.55,13037.82,10411.52,31615.76,13768.26,0.0,0.0,0.0,0.0],"pend":[0.0,550.0,773.46,79670.63,11298.7,137.31,137.31,137.31,137.31,137.31],"ap":[3070.11,141185.31,7131.76,9959.63,23267.56,9697.99,0.0,0.0,0.0,0.0],"orc":[["Aquisição",135000.0,148998.39],["Pré Obra",50000.0,9371.62],["Durante Obra",180000.0,53285.01],["Pós Obra",20000.0,0.0]],"ult":[["18/05/26","10/06/26","SOBASE COMERCIO DE MATERIAIS - Treliça TB 8L, Chapa Madeira Plastif.11mm, Barra Ferro CA-50 3/8, Prego 17x21, Arame Recozido 12","Durante Obra",1234.8,"Pedido 407259 - Cielo","Sobase"],["21/05/26","10/06/26","Areia grossa usinada","Durante Obra",779.9,"","Sandmix"],["21/05/26","10/06/26","Ferro diversas bitolas","Durante Obra",7107.56,"","Ynova"],["25/05/26","10/06/26","Laje","Durante Obra",4646.0,"⚠️ REVISAR: Comprovante mostra cartão Caixa *** 4060 Visa Crédito — verificar se é Cartão Caixa (banco, sem aportes) ou cartão pessoal de sócio. Se for Caixa banco, remover aportes 245/246/251.","Itulaje"],["26/05/26","26/05/26","Conta de luz","Durante Obra",141.25,"Comprovante: 2026-05-26_PGTO_Cpfl Piratininga_Conta de luz.pdf","Cpfl Piratininga"],["22/05/26","22/05/26","Mão de obra","Durante Obra",8748.0,"","Felipe"],["20/05/26","20/05/26","Escoras","Durante Obra",1125.0,"","Madepar centro"],["20/05/26","20/05/26","Andaime 1 mês","Durante Obra",296.0,"","Nc aluguel de maquinas"],["18/05/26","","Vigas","Durante Obra",240.0,"","Madepar centro"],["16/05/26","16/05/26","Betoneira - 1 mês","Durante Obra",342.0,"","Nc aluguel de máquinas"]],"prox":[["29/05/26","Pagamento IPTU ref a 05/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/06/26","Pagamento IPTU ref a 06/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/07/26","Pagamento IPTU ref a 07/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/08/26","Pagamento IPTU ref a 08/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/09/26","Pagamento IPTU ref a 09/2026","Pós Obra",137.31,"","Prefeitura de salto"],["30/10/26","Pagamento IPTU ref a 10/2026","Pós Obra",137.31,"","Prefeitura de salto"]],"atraso":[["06/02/26","Paginação","Pré Obra",550.0,"","Amanda lima - arquitetura"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["17/04/26","Aluguel do container - ref mês 3","Pré Obra",290.0,"","Container"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["29/04/26","Materiais","Durante Obra",5249.83,"","Sobase"],["29/04/26","Materiais","Durante Obra",846.9,"","Sobase"],["29/04/26","Materiais","Durante Obra",779.9,"","Sobase"],["05/05/26","Concreto","Durante Obra",7565.01,"","Big itu"],["07/05/26","Bomba para concretagem","Durante Obra",900.0,"","Silva & lima"],["07/05/26","Materiais","Durante Obra",606.69,"","Sobase"],["07/05/26","Materiais","Durante Obra",2089.69,"","Sobase"]],"todos_pend":[["06/02/26","Paginação","Pré Obra",550.0,"","Amanda lima - arquitetura"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["17/04/26","Aluguel do container - ref mês 3","Pré Obra",290.0,"","Container"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["29/04/26","Materiais","Durante Obra",5249.83,"","Sobase"],["29/04/26","Materiais","Durante Obra",846.9,"","Sobase"],["29/04/26","Materiais","Durante Obra",779.9,"","Sobase"],["05/05/26","Concreto","Durante Obra",7565.01,"","Big itu"],["07/05/26","Bomba para concretagem","Durante Obra",900.0,"","Silva & lima"],["07/05/26","Materiais","Durante Obra",606.69,"","Sobase"],["07/05/26","Materiais","Durante Obra",2089.69,"","Sobase"],["29/05/26","Pagamento IPTU ref a 05/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/06/26","Pagamento IPTU ref a 06/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/07/26","Pagamento IPTU ref a 07/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/08/26","Pagamento IPTU ref a 08/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/09/26","Pagamento IPTU ref a 09/2026","Pós Obra",137.31,"","Prefeitura de salto"],["30/10/26","Pagamento IPTU ref a 10/2026","Pós Obra",137.31,"","Prefeitura de salto"]],"total_prox":823.86,"total_atraso":92155.48,"total_todos_pend":92979.34,"socios":[["Ricardo",33.33,76222.95,10302.13],["Márcio",33.33,76256.06,13265.21],["Gabriel",33.33,76256.49,10855.8]],"total_comp_socios":228735.5,"total_gasto_socios":211655.02,"ap_meses":["Jan/26","Feb/26","Mar/26","Apr/26","May/26","Jun/26","Jul/26","Aug/26","Sep/26","Oct/26"],"ap_vals":[3070.11,141185.31,7131.76,9959.63,23267.56,9697.99,0.0,0.0,0.0,0.0],"prox_socios":[["Ricardo",33.33,10302.13,10302.13],["Márcio",33.33,13265.21,13265.21],["Gabriel",33.33,10855.8,10855.8]],"transferencias":[]}};
+const DATA = {"todos":{"kpi":{"comp":228594.27,"transf":194218.21,"ap_pend":34376.06,"gasto":211513.77,"pago":211513.77,"pendente":92979.34},"meses":["Jan/26","Feb/26","Mar/26","Apr/26","May/26","Jun/26","Jul/26","Aug/26","Sep/26","Oct/26"],"pago":[143968.82,5075.89,2747.6,19306.7,38414.76,2000.0,0.0,0.0,0.0,0.0],"pend":[0.0,550.0,773.46,79670.63,11298.7,137.31,137.31,137.31,137.31,137.31],"ap":[3070.11,141185.31,7131.76,9959.63,23173.4,9697.99,0.0,0.0,0.0,0.0],"orc":[["Aquisição",135000.0,148998.39],["Pré Obra",50000.0,9371.62],["Durante Obra",180000.0,53143.76],["Pós Obra",20000.0,0]],"ult":[["18/05/26","10/06/26","SOBASE COMERCIO DE MATERIAIS - Treliça TB 8L, Chapa Madeira Plastif.11mm, Barra Ferro CA-50 3/8, Prego 17x21, Arame Recozido 12","Durante Obra",1234.8,"Pedido 407259 - Cielo","Sobase"],["21/05/26","10/06/26","Areia grossa usinada","Durante Obra",779.9,"","Sandmix"],["21/05/26","10/06/26","Ferro diversas bitolas","Durante Obra",7107.56,"","Ynova"],["25/05/26","10/06/26","Laje","Durante Obra",4646.0,"⚠️ REVISAR: Comprovante mostra cartão Caixa *** 4060 Visa Crédito — verificar se é Cartão Caixa (banco, sem aportes) ou cartão pessoal de sócio. Se for Caixa banco, remover aportes 245/246/251.","Itulaje"],["22/05/26","22/05/26","Mão de obra","Durante Obra",8748.0,"","Felipe"],["20/05/26","20/05/26","Escoras","Durante Obra",1125.0,"","Madepar centro"],["20/05/26","20/05/26","Andaime 1 mês","Durante Obra",296.0,"","Nc aluguel de maquinas"],["18/05/26","","Vigas","Durante Obra",240.0,"","Madepar centro"],["16/05/26","16/05/26","Betoneira - 1 mês","Durante Obra",342.0,"","Nc aluguel de máquinas"],["12/05/26","15/05/26","Blocos","Durante Obra",6038.0,"","Rafael"]],"prox":[["29/05/26","Pagamento IPTU ref a 05/2026","Durante Obra",137.31,"","Prefeitura de salto"],["29/04/26","Materiais","Durante Obra",5249.83,"","Sobase"],["29/04/26","Materiais","Durante Obra",846.9,"","Sobase"],["29/04/26","Materiais","Durante Obra",779.9,"","Sobase"],["05/05/26","Concreto","Durante Obra",7565.01,"","Big itu"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["07/05/26","Materiais","Durante Obra",606.69,"","Sobase"],["07/05/26","Materiais","Durante Obra",2089.69,"","Sobase"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["30/06/26","Pagamento IPTU ref a 06/2026","Durante Obra",137.31,"","Prefeitura de salto"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["31/07/26","Pagamento IPTU ref a 07/2026","Durante Obra",137.31,"","Prefeitura de salto"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["31/08/26","Pagamento IPTU ref a 08/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/09/26","Pagamento IPTU ref a 09/2026","Pós Obra",137.31,"","Prefeitura de salto"],["30/10/26","Pagamento IPTU ref a 10/2026","Pós Obra",137.31,"","Prefeitura de salto"]],"atraso":[["06/02/26","Paginação","Pré Obra",550.0,"","Amanda lima - arquitetura"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["07/05/26","Bomba para concretagem","Durante Obra",900.0,"","Silva & lima"]],"todos_pend":[["06/02/26","Paginação","Pré Obra",550.0,"","Amanda lima - arquitetura"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["17/04/26","Aluguel do container - ref mês 3","Pré Obra",290.0,"","Container"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["29/04/26","Materiais","Durante Obra",5249.83,"","Sobase"],["29/04/26","Materiais","Durante Obra",846.9,"","Sobase"],["29/04/26","Materiais","Durante Obra",779.9,"","Sobase"],["05/05/26","Concreto","Durante Obra",7565.01,"","Big itu"],["07/05/26","Bomba para concretagem","Durante Obra",900.0,"","Silva & lima"],["07/05/26","Materiais","Durante Obra",606.69,"","Sobase"],["07/05/26","Materiais","Durante Obra",2089.69,"","Sobase"],["29/05/26","Pagamento IPTU ref a 05/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/06/26","Pagamento IPTU ref a 06/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/07/26","Pagamento IPTU ref a 07/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/08/26","Pagamento IPTU ref a 08/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/09/26","Pagamento IPTU ref a 09/2026","Pós Obra",137.31,"","Prefeitura de salto"],["30/10/26","Pagamento IPTU ref a 10/2026","Pós Obra",137.31,"","Prefeitura de salto"]],"total_prox":90981.52,"total_atraso":1707.82,"total_todos_pend":92979.34,"socios":[["Ricardo",33.33,76175.87,10302.13],["Márcio",33.33,76208.98,13218.13],["Gabriel",33.33,76209.41,10855.8]],"total_comp_socios":228594.26,"total_gasto_socios":211513.77,"ap_meses":["Jan/26","Feb/26","Mar/26","Apr/26","May/26","Jun/26","Jul/26","Aug/26","Sep/26","Oct/26"],"ap_vals":[3070.11,141185.31,7131.76,9959.63,23173.4,9697.99,0.0,0.0,0.0,0.0],"prox_socios":[["Ricardo",33.33,10302.13,10302.13],["Márcio",33.33,13218.13,13218.13],["Gabriel",33.33,10855.8,10855.8]],"transferencias":[]},"Casa 01":{"kpi":{"comp":228594.27,"transf":194218.21,"ap_pend":34376.06,"gasto":211513.77,"pago":211513.77,"pendente":92979.34},"meses":["Jan/26","Feb/26","Mar/26","Apr/26","May/26","Jun/26","Jul/26","Aug/26","Sep/26","Oct/26"],"pago":[143968.82,5075.89,2747.6,19306.7,38414.76,2000.0,0.0,0.0,0.0,0.0],"pend":[0.0,550.0,773.46,79670.63,11298.7,137.31,137.31,137.31,137.31,137.31],"ap":[3070.11,141185.31,7131.76,9959.63,23173.4,9697.99,0.0,0.0,0.0,0.0],"orc":[["Aquisição",135000.0,148998.39],["Pré Obra",50000.0,9371.62],["Durante Obra",180000.0,53143.76],["Pós Obra",20000.0,0]],"ult":[["18/05/26","10/06/26","SOBASE COMERCIO DE MATERIAIS - Treliça TB 8L, Chapa Madeira Plastif.11mm, Barra Ferro CA-50 3/8, Prego 17x21, Arame Recozido 12","Durante Obra",1234.8,"Pedido 407259 - Cielo","Sobase"],["21/05/26","10/06/26","Areia grossa usinada","Durante Obra",779.9,"","Sandmix"],["21/05/26","10/06/26","Ferro diversas bitolas","Durante Obra",7107.56,"","Ynova"],["25/05/26","10/06/26","Laje","Durante Obra",4646.0,"⚠️ REVISAR: Comprovante mostra cartão Caixa *** 4060 Visa Crédito — verificar se é Cartão Caixa (banco, sem aportes) ou cartão pessoal de sócio. Se for Caixa banco, remover aportes 245/246/251.","Itulaje"],["22/05/26","22/05/26","Mão de obra","Durante Obra",8748.0,"","Felipe"],["20/05/26","20/05/26","Escoras","Durante Obra",1125.0,"","Madepar centro"],["20/05/26","20/05/26","Andaime 1 mês","Durante Obra",296.0,"","Nc aluguel de maquinas"],["18/05/26","","Vigas","Durante Obra",240.0,"","Madepar centro"],["16/05/26","16/05/26","Betoneira - 1 mês","Durante Obra",342.0,"","Nc aluguel de máquinas"],["12/05/26","15/05/26","Blocos","Durante Obra",6038.0,"","Rafael"]],"prox":[["29/05/26","Pagamento IPTU ref a 05/2026","Durante Obra",137.31,"","Prefeitura de salto"],["29/04/26","Materiais","Durante Obra",5249.83,"","Sobase"],["29/04/26","Materiais","Durante Obra",846.9,"","Sobase"],["29/04/26","Materiais","Durante Obra",779.9,"","Sobase"],["05/05/26","Concreto","Durante Obra",7565.01,"","Big itu"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["07/05/26","Materiais","Durante Obra",606.69,"","Sobase"],["07/05/26","Materiais","Durante Obra",2089.69,"","Sobase"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["30/06/26","Pagamento IPTU ref a 06/2026","Durante Obra",137.31,"","Prefeitura de salto"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["31/07/26","Pagamento IPTU ref a 07/2026","Durante Obra",137.31,"","Prefeitura de salto"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["31/08/26","Pagamento IPTU ref a 08/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/09/26","Pagamento IPTU ref a 09/2026","Pós Obra",137.31,"","Prefeitura de salto"],["30/10/26","Pagamento IPTU ref a 10/2026","Pós Obra",137.31,"","Prefeitura de salto"]],"atraso":[["06/02/26","Paginação","Pré Obra",550.0,"","Amanda lima - arquitetura"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["07/05/26","Bomba para concretagem","Durante Obra",900.0,"","Silva & lima"]],"todos_pend":[["06/02/26","Paginação","Pré Obra",550.0,"","Amanda lima - arquitetura"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["26/03/26","ISS de Obra","Durante Obra",257.82,"","Prefeitura de salto"],["17/04/26","Aluguel do container - ref mês 3","Pré Obra",290.0,"","Container"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",7209.0,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",13603.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["27/04/26","M.O Felipe","Durante Obra",15439.5,"","Felipe"],["29/04/26","Materiais","Durante Obra",5249.83,"","Sobase"],["29/04/26","Materiais","Durante Obra",846.9,"","Sobase"],["29/04/26","Materiais","Durante Obra",779.9,"","Sobase"],["05/05/26","Concreto","Durante Obra",7565.01,"","Big itu"],["07/05/26","Bomba para concretagem","Durante Obra",900.0,"","Silva & lima"],["07/05/26","Materiais","Durante Obra",606.69,"","Sobase"],["07/05/26","Materiais","Durante Obra",2089.69,"","Sobase"],["29/05/26","Pagamento IPTU ref a 05/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/06/26","Pagamento IPTU ref a 06/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/07/26","Pagamento IPTU ref a 07/2026","Durante Obra",137.31,"","Prefeitura de salto"],["31/08/26","Pagamento IPTU ref a 08/2026","Durante Obra",137.31,"","Prefeitura de salto"],["30/09/26","Pagamento IPTU ref a 09/2026","Pós Obra",137.31,"","Prefeitura de salto"],["30/10/26","Pagamento IPTU ref a 10/2026","Pós Obra",137.31,"","Prefeitura de salto"]],"total_prox":90981.52,"total_atraso":1707.82,"total_todos_pend":92979.34,"socios":[["Ricardo",33.33,76175.87,10302.13],["Márcio",33.33,76208.98,13218.13],["Gabriel",33.33,76209.41,10855.8]],"total_comp_socios":228594.26,"total_gasto_socios":211513.77,"ap_meses":["Jan/26","Feb/26","Mar/26","Apr/26","May/26","Jun/26","Jul/26","Aug/26","Sep/26","Oct/26"],"ap_vals":[3070.11,141185.31,7131.76,9959.63,23173.4,9697.99,0.0,0.0,0.0,0.0],"prox_socios":[["Ricardo",33.33,10302.13,10302.13],["Márcio",33.33,13218.13,13218.13],["Gabriel",33.33,10855.8,10855.8]],"transferencias":[]}};
 const CORES_SOCIOS = ['#3b82f6','#22c55e','#a855f7'];
 let filtroAtual='todos', chartMes=null, chartOrc=null, chartAp=null;
 
 function brl(v){return 'R$ '+v.toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.');}
-function fmtD(s){if(!s)return'—';const p=s.split('-');return p.length===3?p[2]+'/'+p[1]+'/'+p[0]:s;}
+function fmtD(s){if(!s)return'—';const p=s.split('/');return p.length===3?s:s;}
 
 function setFiltro(f,el){
   filtroAtual=f;
@@ -274,9 +264,9 @@ function renderKPIs(d){
     <div class="kpi yellow"><div class="kpi-label">Cartão Pendente (CC)</div>
       <div class="kpi-value">${brl(k.ap_pend)}</div>
       <div class="kpi-sub">Comprometido, aguardando vencimento</div></div>
-    <div class="kpi red"><div class="kpi-label">Total Gasto (comprometido)</div>
+    <div class="kpi red"><div class="kpi-label">Total Gasto (despesas pagas)</div>
       <div class="kpi-value">${brl(k.gasto)}</div>
-      <div class="kpi-sub">${brl(k.pago)} pago · ${brl(k.pendente)} a pagar</div></div>
+      <div class="kpi-sub">${brl(k.pendente)} ainda a pagar</div></div>
     <div class="kpi orange"><div class="kpi-label">A Pagar (pendentes)</div>
       <div class="kpi-value">${brl(k.pendente)}</div>
       <div class="kpi-sub">Comprometido ainda não pago</div></div>`;
@@ -325,7 +315,7 @@ function renderChartOrc(d){
 function mkTabela(rows,emptyMsg){
   if(!rows.length)return`<p style="color:var(--muted);font-size:12px;padding:8px 0">${emptyMsg}</p>`;
   return'<table><thead><tr><th>Data</th><th>Descrição</th><th>Fase</th><th>Fornecedor</th><th style="text-align:right">Valor</th></tr></thead><tbody>'+
-    rows.map(r=>`<tr><td style="white-space:nowrap">${fmtD(r[0])}</td><td>${r[1]}</td>
+    rows.map(r=>`<tr><td style="white-space:nowrap">${r[0]||'—'}</td><td>${r[1]}</td>
       <td><span class="badge badge-blue">${r[2]}</span></td>
       <td style="color:var(--muted);font-size:11px">${r[5]||'—'}</td>
       <td style="text-align:right;font-weight:700">${brl(r[3])}</td></tr>`).join('')+
@@ -335,8 +325,8 @@ function mkTabelaPagas(rows,emptyMsg){
   if(!rows.length)return`<p style="color:var(--muted);font-size:12px;padding:8px 0">${emptyMsg}</p>`;
   return'<table><thead><tr><th>Compra</th><th>Pagamento</th><th>Descrição</th><th>Fase</th><th>Fornecedor</th><th style="text-align:right">Valor</th></tr></thead><tbody>'+
     rows.map(r=>`<tr>
-      <td style="white-space:nowrap;color:var(--muted);font-size:11px">${fmtD(r[0])}</td>
-      <td style="white-space:nowrap;font-weight:600;color:var(--green)">${fmtD(r[1])||'—'}</td>
+      <td style="white-space:nowrap;color:var(--muted);font-size:11px">${r[0]||'—'}</td>
+      <td style="white-space:nowrap;font-weight:600;color:var(--green)">${r[1]||'—'}</td>
       <td>${r[2]}</td>
       <td><span class="badge badge-blue">${r[3]}</span></td>
       <td style="color:var(--muted);font-size:11px">${r[6]||'—'}</td>
@@ -349,94 +339,77 @@ function renderTabelaPagas(d){
 }
 function renderProxFin(d){
   const el=document.getElementById('tabela-prox-fin');
-  if(!d.prox.length && !(d.transferencias||[]).length){el.innerHTML='<p style="color:var(--green);font-size:12px;padding:8px 0">✅ Nenhum vencimento nos próximos 10 dias.</p>';return;}
+  if(!d.prox.length&&!(d.transferencias||[]).length){el.innerHTML='<p style="color:var(--green);font-size:12px;padding:8px 0">✅ Nenhum vencimento nos próximos dias.</p>';return;}
   const CORES=['#3b82f6','#22c55e','#a855f7'];
-  // Cards de sócios: total de aportes pendentes (o que cada sócio ainda deve transferir)
   const soc=d.prox_socios.map((s,i)=>{
     const [nome,pct,total_pend]=s;
-    const cor = total_pend>0 ? CORES[i] : '#22c55e';
-    const label = total_pend>0 ? 'a transferir (total)' : 'Em dia ✅';
+    const cor=total_pend>0?CORES[i]:'#22c55e';
+    const label=total_pend>0?'a transferir (total)':'Em dia ✅';
     return`<div style="display:inline-flex;flex-direction:column;align-items:center;background:rgba(255,255,255,0.04);border-radius:8px;padding:6px 14px;border:1px solid rgba(255,255,255,0.08)">
       <span style="color:${CORES[i]};font-weight:700;font-size:11px">${nome} (${pct}%)</span>
       <span style="font-weight:700;font-size:14px;margin:2px 0;color:${cor}">${brl(total_pend)}</span>
       <span style="color:var(--muted);font-size:10px">${label}</span>
     </div>`;
   }).join('');
-
-  // Tabela de transferências pendentes
   const CORES_SOC={'Ricardo':'#3b82f6','Márcio':'#22c55e','Gabriel':'#a855f7'};
-  const transf = (d.transferencias||[]);
-  let transfHTML = '';
+  const transf=(d.transferencias||[]);
+  let transfHTML='';
   if(transf.length>0){
-    const rows = transf.map(t=>{
-      const cDevedor = CORES_SOC[t[0]]||'#94a3b8';
-      const cCredor  = CORES_SOC[t[1]]||'#94a3b8';
-      const desc = t[2]||'';
-      const val  = t[3];
-      const dt   = t[4] ? t[4].split('-').reverse().join('/') : '';
+    const rows=transf.map(t=>{
+      const cD=CORES_SOC[t[0]]||'#94a3b8',cC=CORES_SOC[t[1]]||'#94a3b8';
+      const desc=t[2]||'',val=t[3],dt=t[4]?t[4].split('-').reverse().join('/'):'';
       return`<tr style="border-bottom:1px solid rgba(255,255,255,0.05)">
-        <td style="padding:5px 4px"><span style="color:${cDevedor};font-weight:700">${t[0]}</span></td>
+        <td style="padding:5px 4px"><span style="color:${cD};font-weight:700">${t[0]}</span></td>
         <td style="color:var(--muted);text-align:center;padding:5px 2px">→</td>
-        <td style="padding:5px 4px"><span style="color:${cCredor};font-weight:700">${t[1]}</span></td>
+        <td style="padding:5px 4px"><span style="color:${cC};font-weight:700">${t[1]}</span></td>
         <td style="padding:5px 4px;color:var(--fg);font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${desc}">${desc}</td>
         <td style="padding:5px 4px;text-align:center;font-size:11px;color:var(--muted)">${dt}</td>
         <td style="text-align:right;font-weight:700;color:var(--yellow);padding:5px 4px">${brl(val)}</td>
       </tr>`;
     }).join('');
-    transfHTML = `
-      <div style="margin-top:16px">
-        <div style="font-size:11px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px">💸 Transferências Pendentes</div>
-        <table style="width:100%;border-collapse:collapse">
-          <thead><tr>
-            <th style="text-align:left;font-size:11px;color:var(--muted);padding:4px 4px">Deve</th>
-            <th></th>
-            <th style="text-align:left;font-size:11px;color:var(--muted);padding:4px 4px">Para</th>
-            <th style="text-align:left;font-size:11px;color:var(--muted);padding:4px 4px">Descrição</th>
-            <th style="text-align:center;font-size:11px;color:var(--muted);padding:4px 4px">Vencimento</th>
-            <th style="text-align:right;font-size:11px;color:var(--muted);padding:4px 4px">Valor</th>
-          </tr></thead>
-          <tbody>${rows}</tbody>
-        </table>
-      </div>`;
+    transfHTML=`<div style="margin-top:16px">
+      <div style="font-size:11px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px">💸 Transferências Pendentes</div>
+      <table style="width:100%;border-collapse:collapse">
+        <thead><tr>
+          <th style="text-align:left;font-size:11px;color:var(--muted);padding:4px">Deve</th><th></th>
+          <th style="text-align:left;font-size:11px;color:var(--muted);padding:4px">Para</th>
+          <th style="text-align:left;font-size:11px;color:var(--muted);padding:4px">Descrição</th>
+          <th style="text-align:center;font-size:11px;color:var(--muted);padding:4px">Vencimento</th>
+          <th style="text-align:right;font-size:11px;color:var(--muted);padding:4px">Valor</th>
+        </tr></thead><tbody>${rows}</tbody>
+      </table></div>`;
   } else {
-    transfHTML = '<div style="color:var(--green);font-size:12px;margin-top:12px">✅ Nenhuma transferência pendente</div>';
+    transfHTML='<div style="color:var(--green);font-size:12px;margin-top:12px">✅ Nenhuma transferência pendente</div>';
   }
-
   el.innerHTML=`<div>
-    <div style="font-size:12px;color:var(--yellow);margin-bottom:8px">⚠️ Total esta semana: <strong>${brl(d.total_prox)}</strong></div>
+    <div style="font-size:12px;color:var(--yellow);margin-bottom:8px">⚠️ Total a vencer: <strong>${brl(d.total_prox)}</strong></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">${soc}</div>
     ${transfHTML}
   </div>`;
 }
 
 function renderPagamentos(d){
-  // Em atraso
-  document.getElementById('atraso-section').innerHTML = d.atraso.length
-    ? '<div class="alert-box alert-red">⚠️ <strong>'+d.atraso.length+' pagamento(s) em atraso</strong> — '+brl(d.total_atraso)+'</div>'
+  document.getElementById('atraso-section').innerHTML=d.atraso.length
+    ?'<div class="alert-box alert-red">⚠️ <strong>'+d.atraso.length+' pagamento(s) em atraso</strong> — '+brl(d.total_atraso)+'</div>'
       +'<div class="section"><div class="section-title"><span>🔴</span> Em Atraso</div>'+mkTabela(d.atraso,'')+'</div>'
-    : '';
-  // Próximos vencimentos
+    :'';
   const CORES2=['#3b82f6','#22c55e','#a855f7'];
-  const socBadgesPag=d.prox_socios.map(function(s,i){
+  const socBadges=d.prox_socios.map(function(s,i){
     const nome=s[0],pct=s[1],total_pend=s[2];
     const label=total_pend>0?'● a transferir':'● Em dia ✅';
     const cor=total_pend>0?CORES2[i]:'#22c55e';
-    return '<div style="display:inline-flex;flex-direction:column;align-items:center;background:rgba(255,255,255,0.04);border-radius:8px;padding:5px 12px;border:1px solid rgba(255,255,255,0.08)">'
+    return'<div style="display:inline-flex;flex-direction:column;align-items:center;background:rgba(255,255,255,0.04);border-radius:8px;padding:5px 12px;border:1px solid rgba(255,255,255,0.08)">'
       +'<span style="color:'+CORES2[i]+';font-weight:700;font-size:11px">'+nome+' ('+pct+'%)</span>'
       +'<span style="font-weight:700;font-size:13px;margin:2px 0;color:'+cor+'">'+brl(total_pend)+'</span>'
       +'<span style="font-size:10px;color:var(--muted)">'+label+'</span></div>';
   }).join('');
-  document.getElementById('prox-section').innerHTML =
-    d.prox.length
-      ? '<div class="section">'
-        +'<div class="section-title"><span>📅</span> Próximos Vencimentos — '+brl(d.total_prox)+'</div>'
-        +'<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">'+socBadgesPag+'</div>'
-        +mkTabela(d.prox,'')
-        +'</div>'
-      : '<div style="color:var(--green);font-size:12px;padding:8px 0">✅ Nenhum vencimento próximo.</div>';
-
-  document.getElementById('pend-title').textContent = filtroAtual==='todos' ? 'Todos os Pendentes' : 'Pendentes — '+filtroAtual;
-  document.getElementById('todos-pendentes').innerHTML = mkTabela(d.todos_pend, 'Nenhum pagamento pendente. 🎉');
+  document.getElementById('prox-section').innerHTML=d.prox.length
+    ?'<div class="section"><div class="section-title"><span>📅</span> Próximos Vencimentos — '+brl(d.total_prox)+'</div>'
+      +'<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">'+socBadges+'</div>'
+      +mkTabela(d.prox,'')+'</div>'
+    :'<div style="color:var(--green);font-size:12px;padding:8px 0">✅ Nenhum vencimento próximo.</div>';
+  document.getElementById('pend-title').textContent=filtroAtual==='todos'?'Todos os Pendentes':'Pendentes — '+filtroAtual;
+  document.getElementById('todos-pendentes').innerHTML=mkTabela(d.todos_pend,'Nenhum pagamento pendente. 🎉');
 }
 
 function renderSocios(d){
@@ -444,8 +417,6 @@ function renderSocios(d){
   let h='';
   d.socios.forEach(function(s,i){
     const nome=s[0],pct=s[1],comp=s[2],cc_pend=s[3];
-    // comp = total comprometido; cc_pend = valor pendente em CC
-    // já transferido = comp - cc_pend
     const transferido=comp-cc_pend;
     const pctT=comp>0?Math.min(100,Math.round(transferido/comp*1000)/10):0;
     const cor=CORES_S[i];
@@ -458,12 +429,11 @@ function renderSocios(d){
       +'<div class="progress"><div class="progress-fill" style="width:'+pctT+'%;background:'+cor+'"></div></div>'
       +'<div style="font-size:10px;color:var(--muted);margin-top:3px">'+pctT+'% transferido</div>'
       +(cc_pend>0
-        ? '<div class="sl" style="margin-top:10px">CC Pendente</div><div class="sv" style="color:var(--yellow)">'+brl(cc_pend)+'</div>'
-        : '<div style="color:var(--green);font-size:11px;margin-top:10px">✅ Em dia</div>')
+        ?'<div class="sl" style="margin-top:10px">CC Pendente</div><div class="sv" style="color:var(--yellow)">'+brl(cc_pend)+'</div>'
+        :'<div style="color:var(--green);font-size:11px;margin-top:10px">✅ Em dia</div>')
       +'</div>';
   });
   document.getElementById('socios-grid').innerHTML=h;
-
   if(chartAp){chartAp.destroy();chartAp=null;}
   chartAp=new Chart(document.getElementById('chartAportes'),{type:'bar',
     data:{labels:d.ap_meses,datasets:[{label:'Aportes (R$)',data:d.ap_vals,backgroundColor:'rgba(59,130,246,0.7)',borderRadius:4}]},
